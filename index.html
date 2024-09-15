@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Milestone 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    
+    <form id="resume-form">
+        
+        <h1>Milestone 5: Shareable Link & Download Pdf Resume</h1>
+          
+        
+        
+    <!--      Personal Information        -->
+    
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+               
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        
+        
+        
+        <!--     Profile Picture    -->
+        
+        
+        <label for="profilePicture">Profile Picture:</label>
+        <input type="file" id="profilePicture" accept="images/jpg,images/jpeg,images/png"required>
+        
+        
+    </fieldset>
+    
+    
+ 
+    
+    
+    
+    <!--         Education         -->
+    
+<fieldset>
+    <legend>Education & Qualification</legend>
+    <label for="education">Education:</label>
+    <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
+</fieldset>   
+
+    
+    <!--         Experience         -->
+    
+<fieldset>
+    <legend>Work Experience</legend>
+    <label for="experience">Experience:</label>
+    <textarea id="experience" placeholder="Enter your work experience" rows="4" required></textarea>
+</fieldset>       
+  
+  
+  <!--         Skills         -->
+  
+  <fieldset>
+    <legend>Skills</legend>
+    <label for="skills">Skills:</label>
+    <textarea id="skills" placeholder="Enter your skills" rows="4" required></textarea>
+</fieldset>       
+  
+    <!--         Button          -->
+    
+<button type="submit"><b>Get Resume</b></button>
+    </form>
+    
+    <br>
+    
+    <!--   Resume Output -->
+    
+    
+    <div id="resume-output">
+        
+    </div>
+    
+    <br>
+    
+        <div id="container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <p>Here is your link :</p>
+        <a href="#" id="link" target="_blank"></a>
+        <br>
+        
+        
+<button id="pdfButton"><b>Download</b></button>
+      </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
